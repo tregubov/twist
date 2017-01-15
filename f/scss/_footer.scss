@@ -1,0 +1,27 @@
+.footer {
+	bottom: 65px;
+    box-sizing: border-box;
+	clear: both;
+	font-size: 14px;
+	left: 0;
+    padding: 0 85px;
+	position: fixed;
+	width: 100%;
+
+	@media (max-width: 960px) {
+		padding-left: 32px;
+		padding-right: 32px;
+	}
+	
+	&__copyright {
+		float: left;
+		width: 50%;
+	}
+	
+	&__developer {
+		float: left;
+		text-align: right;
+		width: 50%;
+	}
+	
+}

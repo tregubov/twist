@@ -1,0 +1,102 @@
+.page-main {
+	&__video {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		min-width: 100%;
+		min-height: 100%;
+		width: auto;
+		height: auto;
+		z-index: -100;
+		transform: translateX(-50%) translateY(-50%);
+		background-size: cover;
+		transition: 1s opacity;
+		
+		@media (max-width: 800px) {
+			display: none;
+		}
+	}
+	
+	&__screen {
+		padding: 65px 85px 0;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		
+		@media (max-width: 960px) {
+			padding-left: 32px;
+			padding-right: 32px;
+		}
+	}
+	
+	&__first-screen {
+		z-index: 10;
+		
+		a,
+		a.pseudo {
+			border-color: #fff;
+			color: #fff;
+		}
+		
+		.footer {
+			color: #fff;
+		}
+	}
+	
+	
+	&__screen-button-up,
+	&__screen-button-down {
+		background-color: rgba(0,0,0, 0.25);
+		padding: 7px 14px;
+		bottom: 58px;
+		cursor: pointer;
+		left: 50%;
+		position: fixed;
+		text-align: center;
+		transform: translateX(-50%);
+		transition: background-color 0.23s ease-in-out;
+		z-index: 2;
+		
+		&:hover {
+			background-color: rgba(0,0,0, 0.5);
+		}
+		
+		a:hover {
+			opacity: 1;
+		}
+	}
+	
+	&__screen-button-up {
+		bottom: initial;
+		top: 50px;
+		
+		a {
+			border-bottom-color: #fff;
+			color: #fff;
+		}
+	}
+	
+	&__second-screen {
+		background-color: #fff;
+		transform: translateY(100%);
+		z-index: 15;
+		transition: transform 0.23s ease-in-out;
+		
+		&.view {
+			transform: translateY(0);
+		}
+	}
+	
+	&__second-screen-text {
+		clear: both;
+		font-size: 18px;
+		line-height: 34px;
+		margin: 0 auto;
+		padding: 70px 0 0;
+		text-align: center;
+		width: 50%;
+	}
+	
+}

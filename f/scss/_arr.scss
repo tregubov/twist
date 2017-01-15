@@ -1,0 +1,36 @@
+.arr {
+	background: url(/f/img/ui/arr_down.png) no-repeat 0 100%;
+    display: inline-block;
+    height: 14px;
+	margin-left: 4px;
+    margin-right: -4px;
+	transform: translateY(0px);
+    vertical-align: bottom;
+    width: 12px;
+	
+	*:hover > & {
+		animation-name: toDownAndUp;
+		animation-duration: 0.33s;
+		animation-timing-function: ease-in-out;
+	}
+	
+	&_up {
+		transform: rotate(180deg);
+		
+		*:hover > & {
+			animation-name: toDownAndUpReverse;
+		}
+	}
+}
+
+@keyframes toDownAndUp {
+	0%		{transform: translateY(0px);}
+	50%		{transform: translateY(3px);}
+	100%	{transform: translateY(0px);}
+}
+
+@keyframes toDownAndUpReverse {
+	0%		{transform: rotate(180deg) translateY(0px);}
+	50%		{transform: rotate(180deg) translateY(3px);}
+	100%	{transform: rotate(180deg) translateY(0px);}
+}
