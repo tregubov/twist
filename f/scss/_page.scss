@@ -3,7 +3,7 @@
 	
 	a {
 		border-bottom: 1px solid #000;
-		color: #000;
+		color: #111;
 		text-decoration: none;
 		
 		&:hover {
@@ -14,8 +14,8 @@
 	}
 	
 	a.pseudo {
-		border-bottom-width: 1px;
-		border-bottom-style: dashed;
+		border-bottom-width: 2px;
+		border-bottom-style: dotted;
 	}
 	
 	a.bold {
