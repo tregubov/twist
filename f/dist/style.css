@@ -146,14 +146,14 @@ table {
   font-family: 'Roboto', sans-serif; }
   .page a {
     border-bottom: 1px solid #000;
-    color: #000;
+    color: #111;
     text-decoration: none; }
     .page a:hover {
       opacity: 0.8;
       transition: opacity 0.23s ease-in-out; }
   .page a.pseudo {
-    border-bottom-width: 1px;
-    border-bottom-style: dashed; }
+    border-bottom-width: 2px;
+    border-bottom-style: dotted; }
   .page a.bold {
     border-bottom-width: 2px; }
 
