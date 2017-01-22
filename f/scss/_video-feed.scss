@@ -1,0 +1,38 @@
+.video-feed {
+	margin: 150px auto 35px;
+	width: 628px;
+	
+	&__item {
+		margin-bottom: 60px;
+		position: relative;
+		
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	
+	&__item-title {
+		color: #fff;
+		font-size: 26px;
+		font-weight: bold;
+		position: absolute;
+		top: 40%;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		text-align: center;
+		z-index: 5;
+		
+		&-add {
+			font-size: 14px;
+			font-weight: normal;
+			margin-top: 18px;
+		}
+	}
+	
+	&__item-video {
+		height: auto;
+		max-width: 100%;
+	}
+	
+}
