@@ -97,6 +97,12 @@
 		padding: 70px 0 0;
 		text-align: center;
 		width: 50%;
+		
+		position: absolute;
+		top: 50%;
+		right: 0;
+		left: 0;
+		transform: translateY(-50%);
 	}
 	
 }
