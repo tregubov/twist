@@ -1,0 +1,60 @@
+{
+	"items": [
+		{
+			"name"			: "YUNA STYLE",
+			"text"			: "Имиджевый ролик для производителя одежды «YUNA STYLE»",
+			"poster"		: "f/media/preview/yuna-2015.jpg",
+			"video_mp4"		: "f/media/preview/yuna-2015.mp4",
+			"video_ogv"		: "f/media/preview/yuna-2015.mp4",
+			"video_webm"	: "f/media/preview/yuna-2015.webm"
+		},
+		{
+			"name"			: "MASTERCARD",
+			"text"			: "Вирусная версия рекламы MASTERCARD",
+			"poster"		: "f/media/preview/mastercard.jpg",
+			"video_mp4"		: "f/media/preview/mastercard.mp4",
+			"video_ogv"		: "f/media/preview/mastercard.mp4",
+			"video_webm"	: "f/media/preview/mastercard.webm"
+		},
+		{
+			"name"			: "ПСОГЛАВЦЫ",
+			"text"			: "Буктрейлер для издательского дома «Азбука-Аттикус»",
+			"poster"		: "f/media/preview/psoglavci.jpg",
+			"video_mp4"		: "f/media/preview/psoglavci.mp4",
+			"video_ogv"		: "f/media/preview/psoglavci.mp4",
+			"video_webm"	: "f/media/preview/psoglavci.webm"
+		},
+		{
+			"name"			: "YUNA STYLE",
+			"text"			: "Имиджевый ролик для производителя одежды «YUNA STYLE»",
+			"poster"		: "f/media/preview/yuna-2015.jpg",
+			"video_mp4"		: "f/media/preview/yuna-2015.mp4",
+			"video_ogv"		: "f/media/preview/yuna-2015.mp4",
+			"video_webm"	: "f/media/preview/yuna-2015.webm"
+		},
+		{
+			"name"			: "YUNA STYLE",
+			"text"			: "Имиджевый ролик для производителя одежды «YUNA STYLE»",
+			"poster"		: "f/media/preview/yuna-2015.jpg",
+			"video_mp4"		: "f/media/preview/yuna-2015.mp4",
+			"video_ogv"		: "f/media/preview/yuna-2015.mp4",
+			"video_webm"	: "f/media/preview/yuna-2015.webm"
+		},
+		{
+			"name"			: "YUNA STYLE",
+			"text"			: "Имиджевый ролик для производителя одежды «YUNA STYLE»",
+			"poster"		: "f/media/preview/yuna-2015.jpg",
+			"video_mp4"		: "f/media/preview/yuna-2015.mp4",
+			"video_ogv"		: "f/media/preview/yuna-2015.mp4",
+			"video_webm"	: "f/media/preview/yuna-2015.webm"
+		},
+		{
+			"name"			: "YUNA STYLE",
+			"text"			: "Имиджевый ролик для производителя одежды «YUNA STYLE»",
+			"poster"		: "f/media/preview/yuna-2015.jpg",
+			"video_mp4"		: "f/media/preview/yuna-2015.mp4",
+			"video_ogv"		: "f/media/preview/yuna-2015.mp4",
+			"video_webm"	: "f/media/preview/yuna-2015.webm"
+		}
+	]
+}

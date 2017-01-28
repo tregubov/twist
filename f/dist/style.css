@@ -122,12 +122,13 @@ table {
   margin: 150px auto 35px;
   width: 628px; }
   .video-feed__item {
-    margin-bottom: -3px;
+    margin-bottom: 30px;
     position: relative; }
     .video-feed__item:last-child {
       margin-bottom: 0; }
   .video-feed__item-title {
     color: #fff;
+    cursor: default;
     font-size: 26px;
     font-weight: bold;
     position: absolute;
@@ -136,7 +137,13 @@ table {
     right: 0;
     bottom: 0;
     text-align: center;
-    z-index: 5; }
+    z-index: 5;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
     .video-feed__item-title-add {
       font-size: 14px;
       font-weight: normal;
@@ -144,8 +151,19 @@ table {
   .video-feed__item-video {
     height: auto;
     max-width: 100%; }
+  .video-feed__item-video-container {
+    position: relative; }
+  .video-feed__item-video-image {
+    background-size: cover;
+    font-size: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
 
 .page {
+  box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
   min-width: 960px; }
   .page a {
