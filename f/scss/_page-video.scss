@@ -1,6 +1,11 @@
 .page-video {
 	padding: 65px 85px;
 	
+	@media (max-width: 960px) {
+		padding-left: 32px;
+		padding-right: 32px;
+	}
+	
 	.header {
 		box-sizing: border-box;
 		padding: 65px 85px 0;
@@ -9,5 +14,11 @@
 		left: 0;
 		right: 0;
 		width: 100%;
+		min-width: 960px;
+		
+		@media (max-width: 960px) {
+			padding-left: 32px;
+			padding-right: 32px;
+		}
 	}
 }

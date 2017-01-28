@@ -7,6 +7,7 @@
     padding: 0 85px;
 	position: fixed;
 	width: 100%;
+	min-width: 960px;
 
 	@media (max-width: 960px) {
 		padding-left: 32px;

@@ -72,7 +72,8 @@ table {
   left: 0;
   padding: 0 85px;
   position: fixed;
-  width: 100%; }
+  width: 100%;
+  min-width: 960px; }
   @media (max-width: 960px) {
     .footer {
       padding-left: 32px;
@@ -145,7 +146,8 @@ table {
     max-width: 100%; }
 
 .page {
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  min-width: 960px; }
   .page a {
     border-bottom: 1px solid #000;
     color: #111;
@@ -228,10 +230,19 @@ table {
   margin: 0 auto;
   padding: 70px 0 0;
   text-align: center;
-  width: 50%; }
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  transform: translateY(-50%); }
 
 .page-video {
   padding: 65px 85px; }
+  @media (max-width: 960px) {
+    .page-video {
+      padding-left: 32px;
+      padding-right: 32px; } }
   .page-video .header {
     box-sizing: border-box;
     padding: 65px 85px 0;
@@ -239,6 +250,11 @@ table {
     top: 0;
     left: 0;
     right: 0;
-    width: 100%; }
+    width: 100%;
+    min-width: 960px; }
+    @media (max-width: 960px) {
+      .page-video .header {
+        padding-left: 32px;
+        padding-right: 32px; } }
 
 /*# sourceMappingURL=style.css.map */
