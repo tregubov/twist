@@ -53,6 +53,8 @@ table {
     .header__logo img {
       height: 100px;
       width: 121px; }
+    .header__logo a {
+      border-bottom: none !important; }
   .header__menu {
     float: left;
     font-weight: bold;
@@ -119,7 +121,7 @@ table {
   margin: 150px auto 35px;
   width: 628px; }
   .video-feed__item {
-    margin-bottom: 60px;
+    margin-bottom: -3px;
     position: relative; }
     .video-feed__item:last-child {
       margin-bottom: 0; }
@@ -128,7 +130,7 @@ table {
     font-size: 26px;
     font-weight: bold;
     position: absolute;
-    top: 40%;
+    top: 42%;
     left: 0;
     right: 0;
     bottom: 0;
