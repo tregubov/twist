@@ -5,9 +5,13 @@
 // =============================================================================
 
 var Service = function($rootScope, $http, $timeout) {
-	this.$scope	= $rootScope;
-	this.$http	= $http;
+	this.$scope		= $rootScope;
+	this.$http		= $http;
 	this.$timeout	= $timeout;
+	
+	this.setIsModalOpen = function(mode) {
+		this.$scope.isModalOpen = mode;
+	}.bind(this);
 
 };
 
@@ -32,18 +36,29 @@ var VideoCtrl = function($scope, $element, service, $timeout) {
 	this.$element	= $element;
 	this.service	= service;
 	this.$timeout	= $timeout;
+	this.body		= document.getElementsByTagName('body')[0];
 	
 	
 	// Параметры объекта
-	this.$scope.videoParam = {};
+	this.$scope.videoParam = {
+		data: {
+			items: []
+		},
+		expand: {},
+		expandKey: null,
+		expandOpen: false
+	};
 
 
 	// Методы
-	this.$scope.videoFunc = {};
+	this.$scope.videoFunc = {
+		setExpandData:		this.setExpandData.bind(this),
+		closeExpandData:	this.closeExpandData.bind(this)
+	};
 	
 	
 	// События
-	// ...
+	this.body.addEventListener('keyup', this.keyEvent.bind(this));
 	
 	
 	// Запуск
@@ -52,6 +67,39 @@ var VideoCtrl = function($scope, $element, service, $timeout) {
 		
 	}.bind(this));
 
+};
+
+
+VideoCtrl.prototype.setExpandData = function(key) {
+	var p = this.$scope.videoParam;
+	
+	if(p.data.items[key]) {
+		p.expand		= p.data.items[key];
+		p.expandKey		= key;
+		p.expandOpen	= true;
+		
+		this.service.setIsModalOpen(true);
+		
+	}
+	
+};
+
+
+VideoCtrl.prototype.closeExpandData = function() {
+	var p = this.$scope.videoParam;
+	
+	p.expandOpen = false;
+	this.service.setIsModalOpen(false);
+	this.$scope.$digest();
+	
+};
+
+
+VideoCtrl.prototype.keyEvent = function(evt) {
+	if(evt.keyCode === 27) {
+		this.$scope.videoFunc.closeExpandData();
+	}
+	
 };
 
 

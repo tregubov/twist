@@ -1,3 +1,10 @@
+body {
+	&.modal_open {
+		overflow: hidden;
+	}
+}
+
+
 .page {
 	box-sizing: border-box;
 	font-family: 'Roboto', sans-serif;

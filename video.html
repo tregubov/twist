@@ -15,10 +15,10 @@
 	<script type="text/javascript" src="f/js/app.js"></script>
 	
 </head>
-<body>
+<body ng-app="twistApp"
+	  ng-class="{'modal_open': isModalOpen}">
 	
 	<div class="page page-video"
-		 ng-app="twistApp"
 		 ng-class="{'page__fade-in': true}">
 		<div class="header">
 			<div class="header__logo">
@@ -36,8 +36,9 @@
 		<div class="video-feed" ng-controller="VideoCtrl">
 
 			<div class="video-feed__item"
-				 ng-repeat="item in videoParam.data.items"
+				 ng-repeat="(key, item) in videoParam.data.items"
 				 ng-controller="VideoItemCtrl"
+				 ng-click="videoFunc.setExpandData(key)"
 				 ng-mouseenter="videoItemFunc.playVideo()"
 				 ng-mouseleave="videoItemFunc.stopVideo()">
 				<div class="video-feed__item-title">
@@ -58,6 +59,30 @@
 						<source src="{{::item.video_webm}}" type="video/webm">
 					</video>
 				</div>
+			</div>
+			
+			<div class="video-feed__expand"
+				 ng-class="{'video-feed__expand_open': videoParam.expandOpen}">
+				<iframe width="960"
+						height="540"
+						src="https://www.youtube.com/embed/xqB9KJsbIlU"
+						frameborder="0"
+						allowfullscreen></iframe>
+				
+				<div class="video-feed__expand-data">
+					
+					<div class="video-feed__expand-data-text">
+						
+					</div>
+					
+					<div class="video-feed__expand-data-control">
+						<div class="video-feed__expand-data-control-left"></div>
+						<div class="video-feed__expand-data-control-right"></div>
+						<div class="video-feed__expand-data-control-close"></div>
+					</div>
+					
+				</div>
+				
 			</div>
 			
 		</div>

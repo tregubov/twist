@@ -6,7 +6,8 @@
 			"poster"		: "f/media/preview/yuna-2015.jpg",
 			"video_mp4"		: "f/media/preview/yuna-2015.mp4",
 			"video_ogv"		: "f/media/preview/yuna-2015.mp4",
-			"video_webm"	: "f/media/preview/yuna-2015.webm"
+			"video_webm"	: "f/media/preview/yuna-2015.webm",
+			"youtube_code"	: "xqB9KJsbIlU"
 		},
 		{
 			"name"			: "MASTERCARD",
@@ -14,7 +15,8 @@
 			"poster"		: "f/media/preview/mastercard.jpg",
 			"video_mp4"		: "f/media/preview/mastercard.mp4",
 			"video_ogv"		: "f/media/preview/mastercard.mp4",
-			"video_webm"	: "f/media/preview/mastercard.webm"
+			"video_webm"	: "f/media/preview/mastercard.webm",
+			"youtube_code"	: "xqB9KJsbIlU"
 		},
 		{
 			"name"			: "ПСОГЛАВЦЫ",
@@ -22,7 +24,8 @@
 			"poster"		: "f/media/preview/psoglavci.jpg",
 			"video_mp4"		: "f/media/preview/psoglavci.mp4",
 			"video_ogv"		: "f/media/preview/psoglavci.mp4",
-			"video_webm"	: "f/media/preview/psoglavci.webm"
+			"video_webm"	: "f/media/preview/psoglavci.webm",
+			"youtube_code"	: "xqB9KJsbIlU"
 		},
 		{
 			"name"			: "YUNA STYLE",
@@ -30,7 +33,8 @@
 			"poster"		: "f/media/preview/yuna-2015.jpg",
 			"video_mp4"		: "f/media/preview/yuna-2015.mp4",
 			"video_ogv"		: "f/media/preview/yuna-2015.mp4",
-			"video_webm"	: "f/media/preview/yuna-2015.webm"
+			"video_webm"	: "f/media/preview/yuna-2015.webm",
+			"youtube_code"	: "xqB9KJsbIlU"
 		},
 		{
 			"name"			: "YUNA STYLE",
@@ -38,7 +42,8 @@
 			"poster"		: "f/media/preview/yuna-2015.jpg",
 			"video_mp4"		: "f/media/preview/yuna-2015.mp4",
 			"video_ogv"		: "f/media/preview/yuna-2015.mp4",
-			"video_webm"	: "f/media/preview/yuna-2015.webm"
+			"video_webm"	: "f/media/preview/yuna-2015.webm",
+			"youtube_code"	: "xqB9KJsbIlU"
 		},
 		{
 			"name"			: "YUNA STYLE",
@@ -46,7 +51,8 @@
 			"poster"		: "f/media/preview/yuna-2015.jpg",
 			"video_mp4"		: "f/media/preview/yuna-2015.mp4",
 			"video_ogv"		: "f/media/preview/yuna-2015.mp4",
-			"video_webm"	: "f/media/preview/yuna-2015.webm"
+			"video_webm"	: "f/media/preview/yuna-2015.webm",
+			"youtube_code"	: "xqB9KJsbIlU"
 		},
 		{
 			"name"			: "YUNA STYLE",
@@ -54,7 +60,8 @@
 			"poster"		: "f/media/preview/yuna-2015.jpg",
 			"video_mp4"		: "f/media/preview/yuna-2015.mp4",
 			"video_ogv"		: "f/media/preview/yuna-2015.mp4",
-			"video_webm"	: "f/media/preview/yuna-2015.webm"
+			"video_webm"	: "f/media/preview/yuna-2015.webm",
+			"youtube_code"	: "xqB9KJsbIlU"
 		}
 	]
 }
