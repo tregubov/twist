@@ -13,10 +13,15 @@
 	
 	<script type="text/javascript" src="/f/js/second-screen.js"></script>
 	
+	<script type="text/javascript" src="f/js/angular.min.js"></script>
+	<script type="text/javascript" src="f/js/app.js"></script>
+	
 </head>
 <body>
 	
-	<div class="page page-main">
+	<div class="page page-main"
+		 ng-app="twistApp"
+		 ng-class="{'page__fade-in': true}">
 		
 		<div class="page-main__first-screen page-main__screen">
 			<video poster="" class="page-main__video" playsinline autoplay muted loop>

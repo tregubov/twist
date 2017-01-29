@@ -165,7 +165,11 @@ table {
 .page {
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
-  min-width: 960px; }
+  min-width: 960px;
+  opacity: 0;
+  transition: opacity 0.35s ease-in-out; }
+  .page__fade-in {
+    opacity: 1; }
   .page a {
     border-bottom: 1px solid #000;
     color: #111;
