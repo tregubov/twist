@@ -11,8 +11,6 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="/f/dist/style.css?v=2" />
 	
-	<script type="text/javascript" src="/f/js/second-screen.js"></script>
-	
 	<script type="text/javascript" src="f/js/angular.min.js"></script>
 	<script type="text/javascript" src="f/js/app.js"></script>
 	
@@ -21,6 +19,7 @@
 	
 	<div class="page page-main"
 		 ng-app="twistApp"
+		 ng-controller="PageMainCtrl"
 		 ng-class="{'page__fade-in': true}">
 		
 		<div class="page-main__first-screen page-main__screen">
@@ -43,7 +42,8 @@
 				</div>
 			</div>
 			
-			<div class="page-main__screen-button-down" onclick="setSecondScreen('set');">
+			<div class="page-main__screen-button-down"
+				 ng-click="pageMainParam.isSecondScreen = true">
 				<a href="#" class="pseudo" onclick="return false;">О команде Twist Film Lab</a> <span class="arr"></span>
 			</div>
 			
@@ -59,7 +59,8 @@
 		</div>
 		
 		
-		<div class="page-main__second-screen page-main__screen">
+		<div class="page-main__second-screen page-main__screen"
+			 ng-class="{view: pageMainParam.isSecondScreen}">
 			<div class="header">
 				<div class="header__logo">
 					<a href="/"><img src="/f/img/main/logo-black.png" alt="" /></a>
@@ -73,7 +74,8 @@
 				</div>
 			</div>
 			
-			<div class="page-main__screen-button-up" onclick="setSecondScreen('unset');">
+			<div class="page-main__screen-button-up"
+				 ng-click="pageMainParam.isSecondScreen = false">
 				<a href="#" class="pseudo" onclick="return false;">Вернуться</a> <span class="arr arr_up"></span>
 			</div>
 			

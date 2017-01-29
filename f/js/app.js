@@ -96,6 +96,50 @@ VideoItemCtrl.prototype.stopVideo = function() {
 };
 
 
+var PageMainCtrl = function($scope, $element, service, $timeout) {
+	this.$scope		= $scope;
+	this.$element	= $element;
+	this.service	= service;
+	this.$timeout	= $timeout;
+	
+	
+	// Параметры объекта
+	this.$scope.pageMainParam = {
+		isSecondScreen: false
+	};
+	
+	
+	// Методы
+	this.$scope.pageMainFunc = {
+		
+	};
+	
+	
+	// События
+	document.addEventListener('mousewheel', this.onMouseWheel.bind(this), false );
+
+};
+
+
+PageMainCtrl.prototype.onMouseWheel = function(evt) {
+	var p = this.$scope.pageMainParam;
+	
+	// Первый экран и скролл больше 40px
+	if(p.isSecondScreen === false && evt.deltaY > 40) {
+		p.isSecondScreen = true;
+		this.$scope.$digest();
+	}
+	
+	
+	// Второй экран и скролл больше 40px
+	if(p.isSecondScreen === true && evt.deltaY < -40) {
+		p.isSecondScreen = false;
+		this.$scope.$digest();
+	}
+	
+};
+
+
 // =============================================================================
 // === ИНИЦИАЛИЗАЦИЯ ===========================================================
 // =============================================================================
@@ -107,6 +151,7 @@ angular.module('twistApp', [])
 			return new Service($rootScope, $http, $timeout);
 		}
 	])
-	.controller('VideoCtrl', ['$scope', '$element', 'Service', '$timeout', VideoCtrl])
-	.controller('VideoItemCtrl', ['$scope', '$element', 'Service', '$timeout', VideoItemCtrl])
+	.controller('PageMainCtrl',		['$scope', '$element', 'Service', '$timeout', PageMainCtrl])
+	.controller('VideoCtrl',		['$scope', '$element', 'Service', '$timeout', VideoCtrl])
+	.controller('VideoItemCtrl',	['$scope', '$element', 'Service', '$timeout', VideoItemCtrl])
 ;
