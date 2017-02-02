@@ -28,8 +28,8 @@
 			"youtube_code"	: "xqB9KJsbIlU"
 		},
 		{
-			"name"			: "YUNA STYLE",
-			"text"			: "Имиджевый ролик для производителя одежды «YUNA STYLE»",
+			"name"			: "WALKING DEAD 7",
+			"text"			: "Вирусное видео к 7-му сезону сериала «WALKING DEAD» (Ростелеком, FOX)",
 			"poster"		: "f/media/preview/yuna-2015.jpg",
 			"video_mp4"		: "f/media/preview/yuna-2015.mp4",
 			"video_ogv"		: "f/media/preview/yuna-2015.mp4",
@@ -37,8 +37,8 @@
 			"youtube_code"	: "xqB9KJsbIlU"
 		},
 		{
-			"name"			: "YUNA STYLE",
-			"text"			: "Имиджевый ролик для производителя одежды «YUNA STYLE»",
+			"name"			: "ВОПЛИ ВИДОПЛЯСОВА – «ПЕСЕНКА»",
+			"text"			: "Видеоклип для группы «Вопли Видоплясова»",
 			"poster"		: "f/media/preview/yuna-2015.jpg",
 			"video_mp4"		: "f/media/preview/yuna-2015.mp4",
 			"video_ogv"		: "f/media/preview/yuna-2015.mp4",
@@ -46,8 +46,8 @@
 			"youtube_code"	: "xqB9KJsbIlU"
 		},
 		{
-			"name"			: "YUNA STYLE",
-			"text"			: "Имиджевый ролик для производителя одежды «YUNA STYLE»",
+			"name"			: "ГАМЛЕТ 1",
+			"text"			: "Реклама мотоциклов для компании «IRBIS MOTORS»",
 			"poster"		: "f/media/preview/yuna-2015.jpg",
 			"video_mp4"		: "f/media/preview/yuna-2015.mp4",
 			"video_ogv"		: "f/media/preview/yuna-2015.mp4",
@@ -55,13 +55,83 @@
 			"youtube_code"	: "xqB9KJsbIlU"
 		},
 		{
-			"name"			: "YUNA STYLE",
+			"name"			: "IRBIS MOTORS",
 			"text"			: "Имиджевый ролик для производителя одежды «YUNA STYLE»",
+			"poster"		: "f/media/preview/yuna-2015.jpg",
+			"video_mp4"		: "f/media/preview/yuna-2015.mp4",
+			"video_ogv"		: "f/media/preview/yuna-2015.mp4",
+			"video_webm"	: "f/media/preview/yuna-2015.webm",
+			"youtube_code"	: "xqB9KJsbIlU"
+		},
+                {
+			"name"			: "ЗАГОВОРЩИКИ",
+			"text"			: "Буктрейлер по книгам Олега Гладова",
+			"poster"		: "f/media/preview/yuna-2015.jpg",
+			"video_mp4"		: "f/media/preview/yuna-2015.mp4",
+			"video_ogv"		: "f/media/preview/yuna-2015.mp4",
+			"video_webm"	: "f/media/preview/yuna-2015.webm",
+			"youtube_code"	: "xqB9KJsbIlU"
+		},		
+                {
+			"name"			: "YUNA STYLE 2017",
+			"text"			: "Реклама новой коллекции для производителя одежды «YUNA STYLE»",
+			"poster"		: "f/media/preview/yuna-2015.jpg",
+			"video_mp4"		: "f/media/preview/yuna-2015.mp4",
+			"video_ogv"		: "f/media/preview/yuna-2015.mp4",
+			"video_webm"	: "f/media/preview/yuna-2015.webm",
+			"youtube_code"	: "xqB9KJsbIlU"
+		},
+		{
+			"name"			: "THE SPAMHEAD – «TORPEDO UNO»",
+			"text"			: "Видеоклип для музыкального проекта «The Spamhead»",
+			"poster"		: "f/media/preview/yuna-2015.jpg",
+			"video_mp4"		: "f/media/preview/yuna-2015.mp4",
+			"video_ogv"		: "f/media/preview/yuna-2015.mp4",
+			"video_webm"	: "f/media/preview/yuna-2015.webm",
+			"youtube_code"	: "xqB9KJsbIlU"
+		},
+		{
+			"name"			: "GIFT OF MADNESS - «MILLENIA»",
+			"text"			: "Видеоклип-объявление о поиске вокалиста, для музыкального проекта «GIFT OF MADNESS».",
+			"poster"		: "f/media/preview/yuna-2015.jpg",
+			"video_mp4"		: "f/media/preview/yuna-2015.mp4",
+			"video_ogv"		: "f/media/preview/yuna-2015.mp4",
+			"video_webm"	: "f/media/preview/yuna-2015.webm",
+			"youtube_code"	: "xqB9KJsbIlU"
+		},
+		{
+			"name"			: "NON-FICTION / 10",
+			"text"			: "Презентация книги «ГИПНО НЕКРО СПАМ», на книжной ярмарке «NON-FICTION 10»",
+			"poster"		: "f/media/preview/yuna-2015.jpg",
+			"video_mp4"		: "f/media/preview/yuna-2015.mp4",
+			"video_ogv"		: "f/media/preview/yuna-2015.mp4",
+			"video_webm"	: "f/media/preview/yuna-2015.webm",
+			"youtube_code"	: "xqB9KJsbIlU"
+		},
+		{
+			"name"			: "ОНЕГИН. ДУЭЛЬ.",
+			"text"			: "Видео к театральному проекту «Онегин»",
+			"poster"		: "f/media/preview/yuna-2015.jpg",
+			"video_mp4"		: "f/media/preview/yuna-2015.mp4",
+			"video_ogv"		: "f/media/preview/yuna-2015.mp4",
+			"video_webm"	: "f/media/preview/yuna-2015.webm",
+			"youtube_code"	: "xqB9KJsbIlU"
+		},
+		{
+			"name"			: "ОНЕГИН. ТИР.",
+			"text"			: "Видео к театральному проекту «Онегин»",
 			"poster"		: "f/media/preview/yuna-2015.jpg",
 			"video_mp4"		: "f/media/preview/yuna-2015.mp4",
 			"video_ogv"		: "f/media/preview/yuna-2015.mp4",
 			"video_webm"	: "f/media/preview/yuna-2015.webm",
 			"youtube_code"	: "xqB9KJsbIlU"
 		}
+                
+                
+                
+                
+                
+                
+                
 	]
 }
