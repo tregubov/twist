@@ -44,6 +44,8 @@ var VideoCtrl = function($scope, $element, service, $timeout) {
 		data: {
 			items: []
 		},
+		allowPrev: false,
+		allowNext: false,
 		expand: {},
 		expandKey: null,
 		expandOpen: false
@@ -53,7 +55,10 @@ var VideoCtrl = function($scope, $element, service, $timeout) {
 	// Методы
 	this.$scope.videoFunc = {
 		setExpandData:		this.setExpandData.bind(this),
-		closeExpandData:	this.closeExpandData.bind(this)
+		closeExpandData:	this.closeExpandData.bind(this),
+		goPrev:				this.goPrev.bind(this),
+		goNext:				this.goNext.bind(this),
+		getVideoSrc:		this.getVideoSrc.bind(this)
 	};
 	
 	
@@ -80,6 +85,14 @@ VideoCtrl.prototype.setExpandData = function(key) {
 		
 		this.service.setIsModalOpen(true);
 		
+		if(key > 0) {
+			p.allowPrev = true;
+		}
+		
+		if(key < p.data.items.length-1) {
+			p.allowNext = true;
+		}
+		
 	}
 	
 };
@@ -91,6 +104,31 @@ VideoCtrl.prototype.closeExpandData = function() {
 	p.expandOpen = false;
 	this.service.setIsModalOpen(false);
 	this.$scope.$digest();
+	
+};
+
+
+VideoCtrl.prototype.goPrev = function() {
+	var p = this.$scope.videoParam;
+	
+	if(p.allowPrev) {
+		this.setExpandData(p.expandKey-1);
+	}
+	
+};
+
+
+VideoCtrl.prototype.goNext = function() {
+	var p = this.$scope.videoParam;
+	
+	if(p.allowNext) {
+		this.setExpandData(p.expandKey+1);
+	}
+};
+
+
+VideoCtrl.prototype.getVideoSrc = function() {
+	return 'https://www.youtube.com/embed/' + this.$scope.videoParam.expand.youtube_code;
 	
 };
 
@@ -193,6 +231,11 @@ PageMainCtrl.prototype.onMouseWheel = function(evt) {
 // =============================================================================
 
 angular.module('twistApp', [])
+	.config(function($sceDelegateProvider) {
+		$sceDelegateProvider.resourceUrlWhitelist([
+			'self', 'https://www.youtube.com/**'
+		]);
+	})
 	.factory('Service', [
 		'$rootScope', '$http', '$timeout',
 		function ($rootScope, $http, $timeout) {

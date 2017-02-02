@@ -65,20 +65,29 @@
 				 ng-class="{'video-feed__expand_open': videoParam.expandOpen}">
 				<iframe width="960"
 						height="540"
-						src="https://www.youtube.com/embed/xqB9KJsbIlU"
+						ng-src="{{videoFunc.getVideoSrc()}}"
 						frameborder="0"
 						allowfullscreen></iframe>
 				
 				<div class="video-feed__expand-data">
 					
 					<div class="video-feed__expand-data-text">
-						
+						<p>{{videoParam.expand.name}}</p>
+						<p>{{videoParam.expand.text}}</p>
 					</div>
 					
 					<div class="video-feed__expand-data-control">
-						<div class="video-feed__expand-data-control-left"></div>
-						<div class="video-feed__expand-data-control-right"></div>
-						<div class="video-feed__expand-data-control-close"></div>
+						<div class="video-feed__expand-data-control-left"
+							 ng-class="{allow: videoParam.allowPrev}"
+							 ng-click="videoFunc.goPrev();"><</div>
+						
+						<div class="video-feed__expand-data-control-right"
+							 ng-class="{allow: videoParam.allowNext}"
+							 ng-click="videoFunc.goNext();">></div>
+						
+						<div class="video-feed__expand-data-control-close"
+							 ng-click="videoFunc.closeExpandData();">x</div>
+						
 					</div>
 					
 				</div>
