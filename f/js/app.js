@@ -85,13 +85,8 @@ VideoCtrl.prototype.setExpandData = function(key) {
 		
 		this.service.setIsModalOpen(true);
 		
-		if(key > 0) {
-			p.allowPrev = true;
-		}
-		
-		if(key < p.data.items.length-1) {
-			p.allowNext = true;
-		}
+		p.allowPrev = (key > 0);
+		p.allowNext = (key < p.data.items.length-1);
 		
 	}
 	

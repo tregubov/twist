@@ -1,13 +1,16 @@
 .footer {
-	bottom: 65px;
     box-sizing: border-box;
 	clear: both;
 	font-size: 14px;
-	left: 0;
     padding: 0 85px;
-	position: fixed;
 	width: 100%;
 	min-width: 960px;
+	
+	&_fixed {
+		bottom: 65px;
+		left: 0;
+		position: fixed;
+	}
 
 	@media (max-width: 960px) {
 		padding-left: 32px;

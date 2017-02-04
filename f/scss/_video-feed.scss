@@ -3,6 +3,7 @@
 	width: 628px;
 	
 	&__item {
+		cursor: pointer;
 		margin-bottom: 30px;
 		position: relative;
 		
@@ -13,7 +14,6 @@
 	
 	&__item-title {
 		color: #fff;
-		cursor: default;
 		font-size: 26px;
 		font-weight: bold;
 		position: absolute;
@@ -57,7 +57,7 @@
 		bottom: 0;
 	}
 	
-	&__expand {
+	&__expand-container {
 		color: #fff;
 		opacity: 0;
 		position: fixed;
@@ -80,6 +80,12 @@
 		}
 	}
 	
+	&__expand {
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	
 	&__expand-data {
 		font-size: 0;
 		margin: 0 auto;
@@ -88,23 +94,37 @@
 	}
 	
 	&__expand-data-text {
+		box-sizing: border-box;
 		font-size: 16px;
 		display: inline-block;
+		line-height: 27px;
+		padding: 25px 20px;
+		vertical-align: top;
 		width: 64%;
 	}
 	
 	&__expand-data-control {
+		box-sizing: border-box;
 		display: inline-block;
-		padding: 25px;
-		width: 36%;
+		float: right;
+		padding: 20px;
+		text-align: right;
+		vertical-align: top;
+		width: 236px;
 		
 		&-left,
 		&-right,
 		&-close {
 			display: inline-block;
 			font-size: 32px;
+			text-align: right;
 			height: 65px;
 			width: 65px;
+			transition: background 0.23s ease-in-out;
+			
+			&.allow:hover {
+				background-color: #FFF;
+			}
 		}
 		
 		&-left,
@@ -118,7 +138,16 @@
 			}
 		}
 		
+		&-left {
+			background: url(/f/img/ui/button__prev.png) no-repeat 50% 50%;
+		}
+		
+		&-right {
+			background: url(/f/img/ui/button__next.png) no-repeat 50% 50%;
+		}
+		
 		&-close {
+			background: url(/f/img/ui/button__close.png) no-repeat 50% 50%;
 			cursor: pointer;
 		}
 		
