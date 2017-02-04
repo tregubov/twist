@@ -282,6 +282,8 @@ body.modal_open {
       padding-left: 32px;
       padding-right: 32px; } }
 .page-main__first-screen {
+  background: url(/f/media/main/main.jpg) 50% 50% no-repeat;
+  background-size: cover;
   z-index: 10; }
   .page-main__first-screen a,
   .page-main__first-screen a.pseudo {
