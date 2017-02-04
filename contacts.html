@@ -17,21 +17,15 @@
 </head>
 <body>
 	
-	<div class="page page-main"
+	<div class="page"
 		 ng-app="twistApp"
 		 ng-controller="PageMainCtrl"
 		 ng-class="{'page__fade-in': true}">
 		
-		<div class="page-main__first-screen page-main__screen">
-			<video poster="" class="page-main__video" playsinline autoplay muted loop>
-				<source src="/f/media/main/main.mp4" type="video/mp4">
-<!--				<source src="/f/media/main/main.webm" type="video/webm">
-				<source src="/f/media/main/main.ogv" type="video/ogg">-->
-			</video>
-			
+		<div class="page-main__screen">
 			<div class="header">
 				<div class="header__logo">
-					<a href="/"><img src="/f/img/main/logo-white.png" alt="" /></a>
+					<a href="/"><img src="/f/img/main/logo-black.png" alt="" /></a>
 				</div>
 				
 				<div class="header__menu">
@@ -40,43 +34,6 @@
 						<li><a href="contacts" class="bold">Контакты</a></li>
 					</ul>
 				</div>
-			</div>
-			
-			<div class="page-main__screen-button-down"
-				 ng-click="pageMainParam.isSecondScreen = true">
-				<a href="#" class="pseudo" onclick="return false;">О команде Twist Film Lab</a> <span class="arr"></span>
-			</div>
-			
-			<div class="footer footer_fixed">
-				<div class="footer__copyright">
-					©&nbsp;2017&nbsp;Twist Film Lab
-				</div>
-				
-				<div class="footer__developer">
-					Сделано в&nbsp;<nobr>bro-design.pro</nobr>
-				</div>
-			</div>
-		</div>
-		
-		
-		<div class="page-main__second-screen page-main__screen"
-			 ng-class="{view: pageMainParam.isSecondScreen}">
-			<div class="header">
-				<div class="header__logo">
-					<a href="/"><img src="/f/img/main/logo-black.png" alt="" /></a>
-				</div>
-				
-				<div class="header__menu">
-					<ul>
-						<li><a href="video.html" class="bold">Видео</a></li>
-						<li><a href="#" class="bold">Контакты</a></li>
-					</ul>
-				</div>
-			</div>
-			
-			<div class="page-main__screen-button-up"
-				 ng-click="pageMainParam.isSecondScreen = false">
-				<a href="#" class="pseudo" onclick="return false;">Вернуться</a> <span class="arr arr_up"></span>
 			</div>
 			
 			<div class="page-main__second-screen-text">
@@ -97,9 +54,7 @@
 					Сделано в&nbsp;<nobr>bro-design.pro</nobr>
 				</div>
 			</div>
-
 		</div>
-
 	</div>
 	
 </body>
