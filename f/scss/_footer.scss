@@ -2,9 +2,7 @@
     box-sizing: border-box;
 	clear: both;
 	font-size: 14px;
-    padding: 0 85px;
 	width: 100%;
-	min-width: 960px;
 	
 	&:after {
 		content: '';
@@ -15,7 +13,9 @@
 	&_fixed {
 		bottom: 65px;
 		left: 0;
+		padding: 0 85px;
 		position: fixed;
+		min-width: 960px;
 	}
 
 	@media (max-width: 960px) {
