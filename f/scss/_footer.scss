@@ -6,6 +6,12 @@
 	width: 100%;
 	min-width: 960px;
 	
+	&:after {
+		content: '';
+		clear: both;
+		display: table;
+	}
+	
 	&_fixed {
 		bottom: 65px;
 		left: 0;
@@ -15,6 +21,13 @@
 	@media (max-width: 960px) {
 		padding-left: 32px;
 		padding-right: 32px;
+	}
+	
+	@media (max-width: 900px) {
+		bottom: initial;
+		left: initial;
+		position: initial;
+		min-width: initial;
 	}
 	
 	&__copyright {

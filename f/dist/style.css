@@ -71,6 +71,10 @@ table {
   padding: 0 85px;
   width: 100%;
   min-width: 960px; }
+  .footer:after {
+    content: '';
+    clear: both;
+    display: table; }
   .footer_fixed {
     bottom: 65px;
     left: 0;
@@ -79,6 +83,12 @@ table {
     .footer {
       padding-left: 32px;
       padding-right: 32px; } }
+  @media (max-width: 900px) {
+    .footer {
+      bottom: initial;
+      left: initial;
+      position: initial;
+      min-width: initial; } }
   .footer__copyright {
     float: left;
     width: 50%; }
@@ -267,7 +277,7 @@ body.modal_open {
   transform: translateX(-50%) translateY(-50%);
   background-size: cover;
   transition: 1s opacity; }
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     .page-main__video {
       display: none; } }
 .page-main__screen {
@@ -281,10 +291,16 @@ body.modal_open {
     .page-main__screen {
       padding-left: 32px;
       padding-right: 32px; } }
+  @media (max-width: 900px) {
+    .page-main__screen {
+      position: initial; } }
 .page-main__first-screen {
   background: url(/f/media/main/main.jpg) 50% 50% no-repeat;
   background-size: cover;
   z-index: 10; }
+  @media (max-width: 900px) {
+    .page-main__first-screen {
+      display: none; } }
   .page-main__first-screen a,
   .page-main__first-screen a.pseudo {
     border-color: #fff;
@@ -306,6 +322,9 @@ body.modal_open {
     background-color: rgba(0, 0, 0, 0.5); }
   .page-main__screen-button-up a:hover, .page-main__screen-button-down a:hover {
     opacity: 1; }
+  @media (max-width: 900px) {
+    .page-main__screen-button-up, .page-main__screen-button-down {
+      display: none; } }
 .page-main__screen-button-up {
   bottom: initial;
   top: 50px; }
@@ -319,6 +338,9 @@ body.modal_open {
   transition: transform 0.23s ease-in-out; }
   .page-main__second-screen.view {
     transform: translateY(0); }
+  @media (max-width: 900px) {
+    .page-main__second-screen {
+      transform: translateY(0); } }
 .page-main__second-screen-text {
   clear: both;
   font-size: 18px;
@@ -332,6 +354,13 @@ body.modal_open {
   right: 0;
   left: 0;
   transform: translateY(-50%); }
+  @media (max-width: 900px) {
+    .page-main__second-screen-text {
+      padding: 30px 0 30px;
+      top: initial;
+      position: initial;
+      transform: initial;
+      width: initial; } }
 
 .page-video {
   padding: 65px 85px; }
