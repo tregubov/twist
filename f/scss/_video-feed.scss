@@ -3,9 +3,12 @@
 	width: 628px;
 	
 	&__item {
+		background-color: #000;
 		cursor: pointer;
 		margin-bottom: 30px;
 		position: relative;
+		height: 353px;
+		width: 628px;
 		
 		&:last-child {
 			margin-bottom: 0;

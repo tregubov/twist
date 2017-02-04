@@ -123,9 +123,12 @@ table {
   margin: 150px auto 35px;
   width: 628px; }
   .video-feed__item {
+    background-color: #000;
     cursor: pointer;
     margin-bottom: 30px;
-    position: relative; }
+    position: relative;
+    height: 353px;
+    width: 628px; }
     .video-feed__item:last-child {
       margin-bottom: 0; }
   .video-feed__item-title {
@@ -236,7 +239,7 @@ body.modal_open {
   font-family: 'Roboto', sans-serif;
   min-width: 960px;
   opacity: 0;
-  transition: opacity 0.35s ease-in-out; }
+  transition: opacity 0.4s ease-in-out; }
   .page__fade-in {
     opacity: 1; }
   .page a {

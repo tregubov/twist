@@ -12,6 +12,10 @@ var Service = function($rootScope, $http, $timeout) {
 	this.setIsModalOpen = function(mode) {
 		this.$scope.isModalOpen = mode;
 	}.bind(this);
+	
+	this.$timeout(function() {
+		this.$scope.fadeIn = true;
+	}.bind(this), 400);
 
 };
 
@@ -241,3 +245,7 @@ angular.module('twistApp', [])
 	.controller('VideoCtrl',		['$scope', '$element', 'Service', '$timeout', VideoCtrl])
 	.controller('VideoItemCtrl',	['$scope', '$element', 'Service', '$timeout', VideoItemCtrl])
 ;
+
+angular.element(document.getElementsByTagName('body')).ready(function() {
+	angular.bootstrap(document, ['twistApp']);
+});
